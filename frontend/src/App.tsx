@@ -1,32 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Home from "./Home/Home";
 import Products from "./Products/Products"; 
 
-
 function App() {
   const openMenu = () => {
-  document.querySelector(".sidebar")?.classList.add("open");
+    document.querySelector(".sidebar")?.classList.add("open");
   }
+
   const closeMenu = () => {
-  document.querySelector(".sidebar")?.classList.remove("open");
+    document.querySelector(".sidebar")?.classList.remove("open");
   }
+
   return (
     <Router>
-
-
-
-
-
-    <div className="grid-container">
-      <head>
-        <title>Flying Nomad</title>
-        <link rel="stylesheet" href="index.css" />
-      </head>
-      <body>
+      <div className="grid-container">
         <header className="header">
           <div className="brand">
             <button onClick={openMenu}>&#9776;</button>
@@ -49,20 +37,17 @@ function App() {
 
         <main className="main">
           <Routes>
-            <Route path="/"element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/catalog" element={<Products />} />
           </Routes>
-          
         </main>
 
         <footer className="footer">
           &copy; 2025 Flying Nomad
         </footer>
-      </body>
-    </div>
+      </div>
     </Router>
   );
 }
-
 export default App;
 
