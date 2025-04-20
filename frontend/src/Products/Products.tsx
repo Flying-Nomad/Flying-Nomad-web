@@ -19,7 +19,7 @@ function Products() {
 
   useEffect(() => {
     axios
-      .get<Product[]>("http://localhost:5263/catalog", {
+      .get<Product[]>("http://localhost:5075/catalog", {
         headers: {
           "Content-Type": "application/json",
         },
