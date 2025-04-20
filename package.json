@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Flying-Nomad/Flying-Nomad-web#readme",
   "dependencies": {
+    "axios": "^1.8.4",
     "react-scripts": "^5.0.1"
   }
 }
